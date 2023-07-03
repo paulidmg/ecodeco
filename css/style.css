@@ -1,0 +1,106 @@
+
+/* Navegador */
+.navegador{
+    background-color: #AD1738;
+}
+
+.navegador ul{
+    list-style: none;
+}
+
+.navegador ul li a{
+    color: white;
+    text-decoration: none;
+}
+/* ----- fin */
+
+/* Imágenes */
+.logo-menu{
+    height: 64px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.banner-web{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.nosotros-hermanas{
+    width: 450px;
+    height: 250px;
+    object-fit: cover;
+}
+/* ----- fin */
+
+/* Técnicas */
+.tecnicas{
+    width: 270px;
+    margin: 50px;
+    text-align: center;
+}
+
+.tecnicas img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.tecnicas h5{
+    font-size: 18px;
+}
+/* ----- fin */
+
+/* Botones */
+.boton{
+    background-color: #AD1738;
+    padding: 5px;
+    color: white;
+    margin: 5px;
+    border: none;
+}
+/* ----- fin */
+
+/* Valores */
+.valores{
+    background-color: #AD1738;
+    color: white;
+    text-align: center;
+}
+
+.valores img{
+    height: 40px;
+}
+/* ----- fin */
+
+/* Forms */
+.form-contacto{
+    margin: 20px;
+    padding: 5px;
+}
+/* ----- fin */
+
+/* Tarjetas de productos */
+.tarjeta-producto{
+    width: 270px;
+    border: 1px solid #ebebeb;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.tarjeta-producto img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.tarjeta-producto h5{
+    font-size: 20px;
+}
+
+.tarjeta-producto p{
+    font-size: 15px;
+}
+/* ----- fin */
