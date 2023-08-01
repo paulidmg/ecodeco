@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecodeco</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav class="navegador">
             <a href="../index.html">
-                 <img src="../multimedia/img/logo-ecodeco-blanco.png" alt="logo-ecodeco" class="logo-menu">
+                 <img src="../multimedia/img/logo-ecodeco-blanco.png" alt="logo-ecodeco" class="logo-ecodeco-vertical">
             </a>
             <div>
+                <i class="fa-solid fa-bars"></i>
                 <ul>
                     <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./inspiracion.html">Inspiración</a></li>
                     <li><a href="./nosotros.html">Nosotros</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
@@ -22,40 +25,52 @@
         </nav>
     </header>
     <main>
-        <form class="form-contacto" action="">
+        <div class="contacto">
             <h1>Contactate con nosotros</h1>
-            <div>
+            <form class="form-contacto">
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-            </div>
-            <div>
+                <label for="nombre">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
                 <label for="mail">Mail:</label>
                 <input type="email" name="mail" id="mail" placeholder="ejemplo@example.com">
-            </div>
-            <div>
                 <label for="consulta">Consulta:</label>
                 <input type="text" name="consulta" id="consulta" placeholder="Escribí tu mensaje...">
-            </div>
+                <fieldset>
+                    <label for="mujer">Quiero comprar</label>
+                    <input type="radio" name="sexo" id="compra-productos" value="compra-productos" checked>
+                    <label for="hombre">Quiero capacitarme</label>
+                    <input type="radio" name="sexo" id="capacitacion" value="capacitacion">
+                </fieldset>
             <button type="submit" class="boton">Consultar</button>
-        </form>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14557.568305648703!2d-65.30195068211361!3d-24.19304424209261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4e8bd7a62f%3A0x315150e057f6e499!2sSan%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses!2sar!4v1688341155303!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <button type="submit" class="boton">Borrar</button>
+            </form>
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14557.568305648703!2d-65.30195068211361!3d-24.19304424209261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4e8bd7a62f%3A0x315150e057f6e499!2sSan%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses!2sar!4v1688341155303!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
-    <footer>
+    <footer class="footer">
+        <div class="info-logo">
+            <a href="../index.html">
+                     <img src="../multimedia/img/logo-ecodeco-negro.png" alt="logo-ecodeco-horizontal" class="logo-ecodeco-horizontal">
+            </a>    
+        </div>
         <div class="info-contacto">
-            <h3>Lorem ipsum</h3>
-            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aperiam esse laboriosam quis facilis maxime consequuntur voluptatum.</p>
-            </div>
-            <div class="info-redes">
-                <a href="">
-                    <img src="../multimedia/img/icono-whatsapp.png" alt="whatsapp">
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100082999973650&mibextid=ZbWKwL">
-                    <img src="../multimedia/img/icono-facebook.png" alt="facebook">
-                </a>
-                <a href="https://instagram.com/ecodecojuy?igshid=MzRlODBiNWFlZA==">
-                    <img src="../multimedia/img/icono-instagram.png" alt="instagram">
-                </a>
-            </div>
-    </footer>
+        <h3>Lorem ipsum</h3>
+        <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aperiam esse laboriosam quis facilis maxime consequuntur voluptatum.</p>
+        </div>
+        <div class="info-redes">
+            <a href="">
+                <img src="../multimedia/img/icono-whatsapp.png" alt="whatsapp">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100082999973650&mibextid=ZbWKwL">
+                <img src="../multimedia/img/icono-facebook.png" alt="facebook">
+            </a>
+            <a href="https://instagram.com/ecodecojuy?igshid=MzRlODBiNWFlZA==">
+                <img src="../multimedia/img/icono-instagram.png" alt="instagram">
+            </a>
+        </div>
+        </footer>
 </body>
 </html>
