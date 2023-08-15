@@ -1,0 +1,27 @@
+.valores{
+    background-color: $bg-color;
+    @include flex-wrap-config;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    .valor{
+        width: 270px;
+        padding: 10px;
+        color: $font-color;
+        text-align: center;
+        @media(max-width:768px){
+            width: 100%;
+            grid-template-columns: 1fr;
+            justify-content: center;
+        }
+    }
+    img{
+        height: 40px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    @media(max-width:768px){
+        row-gap: 60px;
+    }
+}

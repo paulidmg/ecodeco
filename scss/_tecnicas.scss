@@ -1,0 +1,19 @@
+.tecnicas{
+    margin: 50px;
+    text-align: center;
+    @include flex-wrap-config;
+    justify-content: space-evenly;
+    .tecnica{
+            width: 270px;
+            margin: 10px;
+            padding: 10px;
+        img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+    }
+    h5{
+        font-size: 18px;
+    }
+}

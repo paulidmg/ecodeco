@@ -1,0 +1,11 @@
+@mixin padding-settings {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@mixin flex-wrap-config {
+    display: flex;
+    flex-wrap: wrap;
+}

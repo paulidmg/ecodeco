@@ -1,0 +1,36 @@
+.contacto{
+    margin-top: 30px;
+    text-align: center;
+    .form-contacto{
+        width: 360px;
+        font-size:20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 15px auto;
+        margin-bottom: 30px;
+        label{
+            text-align: start;
+        }
+        fieldset{
+            display: flex;
+            font-size: 18px; 
+            padding: 10px;
+            border: none;
+            gap: 7px;
+        }
+    }
+}
+
+#nombre{
+    @extend %form;
+}
+#apellido{
+    @extend %form;
+}
+#mail{
+    @extend %form;
+}
+#consulta{
+    @extend %form;
+}

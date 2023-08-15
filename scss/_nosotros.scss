@@ -1,0 +1,24 @@
+.nosotros-contenido{
+    display:flex;
+    @include padding-settings;
+    justify-content: center;
+    align-items: center;
+    .nosotros-contenido-texto{
+        font-size: 16px;
+        text-align: justify;
+        margin-right: 30px;
+    }
+    .nosotros-hermanas{
+        width: 550px;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+@media(max-width:768px){
+    .nosotros-contenido{
+        @include flex-wrap-config;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+}

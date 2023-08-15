@@ -1,0 +1,27 @@
+.titulos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.titulos-izquierda{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-align: left;
+    justify-content: left;
+    font-size: 18px;
+}
+
+.texto-introductorio-home{
+    @include flex-wrap-config;
+    padding-left: 20px;
+    padding-top: 40px;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
