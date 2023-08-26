@@ -142,12 +142,14 @@
 }
 
 .productos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 3fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 50px;
 }
 .productos .tarjeta-producto {
-  width: 270px;
+  width: 300px;
   border: 1px solid #ebebeb;
   margin: 15px;
   padding: 15px;
@@ -231,12 +233,12 @@
 .footer .info-contacto {
   width: 100%;
   max-width: 1200px;
-  margin: 15px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .footer .info-redes {
   width: 100%;
@@ -265,7 +267,6 @@
     flex-wrap: wrap;
     padding-right: 30px;
     margin-top: 30px;
-    text-align: center;
     justify-content: center;
   }
   .footer .info-redes {
@@ -289,6 +290,7 @@
   padding: 5px 10px;
   color: white;
   border: none;
+  cursor: pointer;
   flex-direction: row;
   justify-content: center;
   margin: 5px 5px;

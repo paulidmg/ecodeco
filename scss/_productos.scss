@@ -1,8 +1,11 @@
 .productos{
-    @include flex-wrap-config;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 3fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 50px;
     .tarjeta-producto{
-        width: 270px;
+        width: 300px;
         border: 1px solid #ebebeb;
         margin: 15px;
         padding: 15px;
